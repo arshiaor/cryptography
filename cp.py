@@ -1,16 +1,17 @@
-import cryptography, sys, subprocess, time
-from cryptography.fernet import Fernet
-from cryptography.fernet import InvalidToken
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--upgrade','pip'])
+import sys, subprocess, time
+
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--upgrade', 'pip'])
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'termcolor'])
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pyfiglet'])
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'colorama'])
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'animation'])
-
-
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'cryptography'])
+import cryptography
+from cryptography.fernet import Fernet
+from cryptography.fernet import InvalidToken
 import pyfiglet
 from colorama import init
-import termcolor,animation
+import termcolor, animation
 
 init()
 
