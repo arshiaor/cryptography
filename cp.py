@@ -74,3 +74,4 @@ while end != "exit":
                 print(termcolor.colored("invalid key- Decryption Unsuccessfull!", "red"))
                 line()
     continue
+.
